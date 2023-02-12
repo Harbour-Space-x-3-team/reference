@@ -126,7 +126,7 @@
 
 ## Strings
 - Suffix Array + LCP (TESTED)
-- Z-function
+- Z-function (TESTED)
 - KMP
 - Manacher
 - Aho-Corasick
