@@ -128,7 +128,7 @@
 - Suffix Array + LCP (TESTED)
 - Z-function (TESTED)
 - KMP (TESTED)
-- Manacher
+- Manacher (TESTED)
 - Aho-Corasick
 - Hashing
 - Trie 
