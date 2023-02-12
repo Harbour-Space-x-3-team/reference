@@ -89,15 +89,17 @@
     - LCA
     - Cactus-edge
 - Flow:
-    - Dinic / Push relabel
+    - Dinic (ADDED)
+    - Push relabel 
     - Min Cost Max Flow (tourist)
     - Hopcroft Karp
     - ...
 - General:
-    - SCC, Articulation, bridges, BCC
-    - 2SAT
-    - Euler circuit
-    - Max Clique 
+    - SCC, Articulation, bridges
+    - BCC (ADDED)
+    - 2SAT (ADDED)
+    - Euler circuit (ADDED)
+    - Max Clique (ADDED)
     - Directed MST
     - SPFA
 - Offline Dynamic Connectivity 

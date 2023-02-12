@@ -1,53 +1,92 @@
-/**
- * Author: chilli
- * Date: 2019-04-26
- * License: CC0
- * Source: https://cp-algorithms.com/graph/dinic.html
- * Description: Flow algorithm with complexity $O(VE\log U)$ where $U = \max |\text{cap}|$.
- * $O(\min(E^{1/2}, V^{2/3})E)$ if $U = 1$; $O(\sqrt{V}E)$ for bipartite matching.
- * Status: Tested on SPOJ FASTFLOW and SPOJ MATCHING, stress-tested
- */
 #pragma once
 
-struct Dinic {
-	struct Edge {
-		int to, rev;
-		ll c, oc;
-		ll flow() { return max(oc - c, 0LL); } // if you need flows
-	};
-	vi lvl, ptr, q;
-	vector<vector<Edge>> adj;
-	Dinic(int n) : lvl(n), ptr(n), q(n), adj(n) {}
-	void addEdge(int a, int b, ll c, ll rcap = 0) {
-		adj[a].push_back({b, sz(adj[b]), c, c});
-		adj[b].push_back({a, sz(adj[a]) - 1, rcap, rcap});
-	}
-	ll dfs(int v, int t, ll f) {
-		if (v == t || !f) return f;
-		for (int& i = ptr[v]; i < sz(adj[v]); i++) {
-			Edge& e = adj[v][i];
-			if (lvl[e.to] == lvl[v] + 1)
-				if (ll p = dfs(e.to, t, min(f, e.c))) {
-					e.c -= p, adj[e.to][e.rev].c += p;
-					return p;
-				}
-		}
-		return 0;
-	}
-	ll calc(int s, int t) {
-		ll flow = 0; q[0] = s;
-		rep(L,0,31) do { // 'int L=30' maybe faster for random data
-			lvl = ptr = vi(sz(q));
-			int qi = 0, qe = lvl[s] = 1;
-			while (qi < qe && !lvl[t]) {
-				int v = q[qi++];
-				for (Edge e : adj[v])
-					if (!lvl[e.to] && e.c >> (30 - L))
-						q[qe++] = e.to, lvl[e.to] = lvl[v] + 1;
-			}
-			while (ll p = dfs(s, t, LLONG_MAX)) flow += p;
-		} while (lvl[t]);
-		return flow;
-	}
-	bool leftOfMinCut(int a) { return lvl[a] != 0; }
+template<typename T>
+struct dinic
+{
+    struct edge
+    {
+        int src, dst;
+        T cap, flow;
+        int rev;
+    };
+
+    int n;
+    vector< vector<edge> > adj;
+
+    dinic(int n) : n(n), adj(n) {}
+
+    void add_edge(int src, int dst, T cap)
+    {
+        adj[src].push_back({ src, dst, cap, 0, (int) adj[dst].size() });
+        if (src == dst)
+            adj[src].back().rev++;
+        adj[dst].push_back({ dst, src, 0, 0, (int) adj[src].size() - 1 });
+    }
+
+    vector<int> level, iter;
+
+    T augment(int u, int t, T cur)
+    {
+        if (u == t)
+            return cur;
+        for (int &i = iter[u]; i < (int) adj[u].size(); ++i)
+        {
+            edge &e = adj[u][i];
+            if (e.cap - e.flow > 0 && level[u] > level[e.dst])
+            {
+                T f = augment(e.dst, t, min(cur, e.cap - e.flow));
+                if (f > 0)
+                {
+                    e.flow += f;
+                    adj[e.dst][e.rev].flow -= f;
+                    return f;
+                }
+            }
+        }
+        return 0;
+    }
+
+    int bfs(int s, int t)
+    {
+        level.assign(n, n);
+        level[t] = 0;
+        queue<int> Q;
+        for (Q.push(t); !Q.empty(); Q.pop())
+        {
+            int u = Q.front();
+            if (u == s)
+                break;
+            for (int i = 0; i < (int)adj[u].size(); ++i){
+                edge &e = adj[u][i];
+                edge &erev = adj[e.dst][e.rev];
+                if (erev.cap - erev.flow > 0
+                    && level[e.dst] > level[u] + 1)
+                {
+                    Q.push(e.dst);
+                    level[e.dst] = level[u] + 1;
+                }
+            }
+        }
+        return level[s];
+    }
+
+    const T oo = numeric_limits<T>::max();
+
+    T max_flow(int s, int t)
+    {
+        for (int u = 0; u < n; ++u) // initialize
+            for (int i = 0; i < (int)adj[u].size(); ++i){
+                edge &e = adj[u][i];
+                e.flow = 0;
+            }
+
+        T flow = 0;
+        while (bfs(s, t) < n)
+        {
+            iter.assign(n, 0);
+            for (T f; (f = augment(s, t, oo)) > 0;)
+                flow += f;
+        } // level[u] == n ==> s-side
+        return flow;
+    }
 };

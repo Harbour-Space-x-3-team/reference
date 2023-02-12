@@ -19,8 +19,8 @@
  */
 #pragma once
 
-vi num, st;
-vector<vector<pii>> ed;
+vector<int> num, st;
+vector<vector<pair<int,int>>> ed;
 int Time;
 template<class F>
 int dfs(int at, int par, F& f) {
@@ -50,5 +50,7 @@ int dfs(int at, int par, F& f) {
 template<class F>
 void bicomps(F f) {
 	num.assign(sz(ed), 0);
-	rep(i,0,sz(ed)) if (!num[i]) dfs(i, -1, f);
+	for(int i = 0; i < (int)ed.size(); i++)
+		if(!num[i])
+			dfs(i, -1, f);
 }

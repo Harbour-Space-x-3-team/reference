@@ -8,13 +8,13 @@
  * -1's of the same size as the right partition. Returns the size of
  * the matching. $btoa[i]$ will be the match for vertex $i$ on the right side,
  * or $-1$ if it's not matched.
- * Usage: vi btoa(m, -1); hopcroftKarp(g, btoa);
+ * Usage: vector<int> btoa(m, -1); hopcroftKarp(g, btoa);
  * Time: O(\sqrt{V}E)
  * Status: stress-tested by MinimumVertexCover, and tested on oldkattis.adkbipmatch and SPOJ:MATCHING
  */
 #pragma once
 
-bool dfs(int a, int L, vector<vi>& g, vi& btoa, vi& A, vi& B) {
+bool dfs(int a, int L, vector<vector<int>>& g, vector<int>& btoa, vector<int>& A, vector<int>& B) {
 	if (A[a] != L) return 0;
 	A[a] = -1;
 	for (int b : g[a]) if (B[b] == L + 1) {
@@ -25,16 +25,17 @@ bool dfs(int a, int L, vector<vi>& g, vi& btoa, vi& A, vi& B) {
 	return 0;
 }
 
-int hopcroftKarp(vector<vi>& g, vi& btoa) {
+int hopcroftKarp(vector<vector<int>>& g, vector<int>& btoa) {
 	int res = 0;
-	vi A(g.size()), B(btoa.size()), cur, next;
+	vector<int> A(g.size()), B(btoa.size()), cur, next;
 	for (;;) {
 		fill(all(A), 0);
 		fill(all(B), 0);
 		/// Find the starting nodes for BFS (i.e. layer 0).
 		cur.clear();
 		for (int a : btoa) if(a != -1) A[a] = -1;
-		rep(a,0,sz(g)) if(A[a] == 0) cur.push_back(a);
+		for(int a = 0; a < (int)g.size(); a++)
+			if(A[a] == 0) cur.push_back(a);
 		/// Find all layers using bfs.
 		for (int lay = 1;; lay++) {
 			bool islast = 0;
@@ -55,7 +56,7 @@ int hopcroftKarp(vector<vi>& g, vi& btoa) {
 			cur.swap(next);
 		}
 		/// Use DFS to scan for augmenting paths.
-		rep(a,0,sz(g))
+		for(int a = 0; a < (int)g.size(); a++)
 			res += dfs(a, 0, g, btoa, A, B);
 	}
 }
