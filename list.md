@@ -125,7 +125,7 @@
 - Floyd's cycle detection
 
 ## Strings
-- Suffix Array + LCP
+- Suffix Array + LCP (TESTED)
 - Z-function
 - KMP
 - Manacher
