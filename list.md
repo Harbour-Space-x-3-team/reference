@@ -4,7 +4,6 @@
 ## Misc
 - clock per second
 - mersenne rng() 
-- order-statistics
 - pragmas
 
 ## Formulas 
