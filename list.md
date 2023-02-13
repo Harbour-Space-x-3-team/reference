@@ -97,7 +97,7 @@
 - Segment trees (ADDED)
 - Something 2D
 - Sparse Table (ADDED)
-- Treap
+- Treap (TESTED)
 
 ## DP optimization
 - Alien
