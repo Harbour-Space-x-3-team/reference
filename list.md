@@ -88,15 +88,15 @@
 - sieve
 
 ## Data Structures
-- Link-Cut Tree
-- Mo's Algorithm
-- Ordered statistics
+- Link-Cut Tree (ADDED)
+- Mo's Algorithm (ADDED)
+- Ordered statistics (ADDED)
 - Persistent segment tree
-- DSU with rollbacks
-- Rollback trick
+- DSU with rollbacks (ADDED)
+- Rollback trick (ADDED)
 - Segment trees
 - Something 2D
-- Sparse Table
+- Sparse Table (ADDED)
 - Treap
 
 ## DP optimization
@@ -112,7 +112,7 @@
     - Push relabel 
     - Flow With Lower Bound	
     - Min Cost Max Flow (tourist)
-    - Hopcroft Karp
+    - Hopcroft Karp (Tested)
     - ...
 - General:
     - 2SAT (ADDED)
@@ -128,7 +128,7 @@
     - HLD 
     - LCA
 ## Strings
-- Aho-Corasick
+- Aho-Corasick (ADDED)
 - Hashing (TESTED)
 - KMP (TESTED)
 - Manacher (TESTED)
