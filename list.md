@@ -89,7 +89,7 @@
 
 ## Data Structures
 - Link-Cut Tree
-- Mo's Algorithm
+- Mo's Algorithm (ADDED)
 - Ordered statistics (ADDED)
 - Persistent segment tree
 - DSU with rollbacks (ADDED)
