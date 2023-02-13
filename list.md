@@ -12,6 +12,7 @@
 - Stirling numbers 
 - Burnside's lemma
 - Binomial coefficient formulas
+- Fibonnaci Advanced Formulas
 
 ## Geometry
 - Circle-Circle Intersection
@@ -50,6 +51,7 @@
 
 ## Data Structures
 - Rollback trick
+- Mo's Algorithm
 - Segment trees
 - Treap
 - Something 2D
@@ -66,7 +68,7 @@
 - FFT
 - NTT
 - FWHT
-- Lagrange's interpolation
+- Lagrange's interpolation (normal and aritmetic)
 - Gold-section search
 - Newton's method
 - Gauss
@@ -93,9 +95,11 @@
     - Push relabel 
     - Min Cost Max Flow (tourist)
     - Hopcroft Karp
+    - Hungarian
+    - Flow With Lower Bound	
     - ...
 - General:
-    - SCC, Articulation, bridges
+    - Gabow SCC, Articulation, bridges
     - BCC (ADDED)
     - 2SAT (ADDED)
     - Euler circuit (ADDED)
@@ -103,7 +107,7 @@
     - Directed MST
     - SPFA
 - Offline Dynamic Connectivity 
-    - DSU + rollback
+    - DSU with rollbacks + Rollback Trick
 
 ## Combinatorics
 - Burnside Lemma
