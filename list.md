@@ -112,7 +112,7 @@
     - Push relabel 
     - Flow With Lower Bound	
     - Min Cost Max Flow (tourist)
-    - Hopcroft Karp
+    - Hopcroft Karp (Tested)
     - ...
 - General:
     - 2SAT (ADDED)
