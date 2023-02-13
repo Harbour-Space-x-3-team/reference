@@ -18,6 +18,7 @@
 - Circle-Line Intersection
 - Circle-Polygon Intersection (area)
 - 2 Circle tangents
+- Point-Polygon tangents
 - Circle-point tangents
 - Two points radius circle
 - Circum Circle
@@ -89,7 +90,7 @@
     - LCA
     - Cactus-edge
 - Flow:
-    - Dinic (ADDED)
+    - Dinic (Tested)
     - Push relabel 
     - Min Cost Max Flow (tourist)
     - Hopcroft Karp
