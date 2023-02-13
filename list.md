@@ -93,7 +93,7 @@
     - Dinic (Tested)
     - Push relabel 
     - Min Cost Max Flow (tourist)
-    - Hopcroft Karp
+    - Hopcroft Karp (Tested)
     - ...
 - General:
     - SCC, Articulation, bridges
