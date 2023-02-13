@@ -48,19 +48,6 @@
 - Spherical Distance
 - Two points radius circle
 
-
-## Data Structures
-- Hash table
-- Link-Cut Tree
-- Mo's Algorithm
-- Ordered statistics
-- Persistent segment tree
-- Rollback trick
-- Segment trees
-- Something 2D
-- Sparse Table
-- Treap
-
 ## Numerical
 - Berlekamp-Massey
 - BigInteger
@@ -76,6 +63,36 @@
 - NTT
 - Simplex
 - XOR-basis
+
+## Combinatorics
+- Burnside Lemma
+- Extended binomial from Brayan's template 
+- Stirling numbers 
+
+## Number Theory
+- CRT
+- diophantine equation
+- discrete logarithm
+- discrete root
+- Floyd's cycle detection
+- harmonic partition (ceil and floor)
+- linear congruence
+- miller rabin
+- Multiplicative functions (phi, moebius, sigma)
+- pollard rho
+- primitive root
+- sieve
+## Data Structures
+- Hash table
+- Link-Cut Tree
+- Mo's Algorithm
+- Ordered statistics
+- Persistent segment tree
+- Rollback trick
+- Segment trees
+- Something 2D
+- Sparse Table
+- Treap
 
 ## DP optimization
 - Alien
@@ -108,26 +125,6 @@
     - Centroid
     - HLD 
     - LCA
-
-## Combinatorics
-- Burnside Lemma
-- Extended binomial from Brayan's template 
-- Stirling numbers 
-
-## Number Theory
-- CRT
-- diophantine equation
-- discrete logarithm
-- discrete root
-- Floyd's cycle detection
-- harmonic partition (ceil and floor)
-- linear congruence
-- miller rabin
-- Multiplicative functions (phi, moebius, sigma)
-- pollard rho
-- primitive root
-- sieve
-
 ## Strings
 - Aho-Corasick
 - Hashing
