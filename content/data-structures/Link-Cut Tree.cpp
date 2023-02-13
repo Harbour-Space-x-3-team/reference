@@ -1,3 +1,4 @@
+// Usage: FOR(i,1,N)LCT[i]=new snode(i);
 typedef struct snode* sn;
 struct snode { //////// VARIABLES
 	sn p, c[2]; // parent, children
