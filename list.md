@@ -133,5 +133,4 @@
 - KMP (TESTED)
 - Manacher (TESTED)
 - Suffix Array + LCP (TESTED)
-- Trie 
 - Z-function (TESTED)
