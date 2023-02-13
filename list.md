@@ -82,6 +82,7 @@
 - pollard rho
 - primitive root
 - sieve
+
 ## Data Structures
 - Link-Cut Tree
 - Mo's Algorithm
