@@ -25,6 +25,10 @@
 - Circle-Line Intersection
 - Circle-point tangents
 - Circle-Polygon Intersection (area)
+- 2 Circle tangents
+- Circle-point tangents
+- Point-Polygon tangents
+- Two points radius circle
 - Circum Circle
 - Closest Pair of points
 - Convex Hull
@@ -88,7 +92,7 @@
 - Mo's Algorithm
 - Ordered statistics
 - Persistent segment tree
-- DSU with rollbacks
+- DSU with rollbacks (ADDED)
 - Rollback trick
 - Segment trees
 - Something 2D
@@ -104,12 +108,11 @@
 
 ## Graph
 - Flow:
-    - Dinic (ADDED)
-    - Flow With Lower Bound	
-    - Hopcroft Karp
-    - Hungarian
-    - Min Cost Max Flow (tourist)
+    - Dinic (Tested)
     - Push relabel 
+    - Flow With Lower Bound	
+    - Min Cost Max Flow (tourist)
+    - Hopcroft Karp
     - ...
 - General:
     - 2SAT (ADDED)
