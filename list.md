@@ -93,7 +93,7 @@
 - Ordered statistics
 - Persistent segment tree
 - DSU with rollbacks (ADDED)
-- Rollback trick
+- Rollback trick (ADDED)
 - Segment trees
 - Something 2D
 - Sparse Table (ADDED)
