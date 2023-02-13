@@ -94,7 +94,7 @@
 - Persistent segment tree
 - DSU with rollbacks (ADDED)
 - Rollback trick (ADDED)
-- Segment trees
+- Segment trees (ADDED)
 - Something 2D
 - Sparse Table (ADDED)
 - Treap
