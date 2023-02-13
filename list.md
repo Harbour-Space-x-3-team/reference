@@ -91,7 +91,7 @@
 - Link-Cut Tree (ADDED)
 - Mo's Algorithm (ADDED)
 - Ordered statistics (ADDED)
-- Persistent segment tree
+- Persistent segment tree (TESTED)
 - DSU with rollbacks (ADDED)
 - Rollback trick (ADDED)
 - Segment trees (ADDED)
