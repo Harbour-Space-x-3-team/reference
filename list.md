@@ -84,7 +84,6 @@
 - primitive root
 - sieve
 ## Data Structures
-- Hash table
 - Link-Cut Tree
 - Mo's Algorithm
 - Ordered statistics
