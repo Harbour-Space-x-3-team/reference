@@ -12,17 +12,17 @@ struct snode { //////// VARIABLES
 	void prop() { // lazy prop
 		if (!flip) return;
 		swap(c[0],c[1]); flip = 0;
-		F0R(i,2) if (c[i]) c[i]->flip ^= 1;
+		for(int i = 0 ; i < 2 ; i++) if (c[i]) c[i]->flip ^= 1;
 	}
 	void calc() { // recalc vals
-		F0R(i,2) if (c[i]) c[i]->prop();
+		for(int i = 0 ; i < 2 ; i++) if (c[i]) c[i]->prop();
 		sz = 1+getSz(c[0])+getSz(c[1]);
 		sub = 1+getSub(c[0])+getSub(c[1])+vsub;
 	}
 	//////// SPLAY TREE OPERATIONS
 	int dir() {
 		if (!p) return -2;
-		F0R(i,2) if (p->c[i] == this) return i;
+		for(int i = 0 ; i < 2 ; i++) if (p->c[i] == this) return i;
 		return -1; // p is path-parent pointer
 	} // -> not in current splay tree
 	// test if root of current splay tree
