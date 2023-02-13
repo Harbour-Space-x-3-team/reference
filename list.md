@@ -129,7 +129,7 @@
     - LCA
 ## Strings
 - Aho-Corasick
-- Hashing
+- Hashing (TESTED)
 - KMP (TESTED)
 - Manacher (TESTED)
 - Suffix Array + LCP (TESTED)
