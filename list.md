@@ -3,133 +3,135 @@
 
 ## Misc
 - clock per second
-- order-statistics
 - mersenne rng() 
+- pragmas
 
 ## Formulas 
-- Pick's theorem
-- Catalan (k-folded Catalan)
-- Stirling numbers 
-- Burnside's lemma
 - Binomial coefficient formulas
+- Burnside's lemma
+- Catalan (k-folded Catalan)
+- Fibonnaci Advanced Formulas
+- Pick's theorem
+- Stirling numbers 
 
 ## Geometry
+- 2 Circle tangents
+- Antipodal points (rotating calipers)
+- Centroid of Polygon
+- Check if a point is inside a segment
+- Check Point Inside Polygon
+- Circle struct
 - Circle-Circle Intersection
 - Circle-Line Intersection
+- Circle-point tangents
 - Circle-Polygon Intersection (area)
 - 2 Circle tangents
-- Point-Polygon tangents
 - Circle-point tangents
+- Point-Polygon tangents
 - Two points radius circle
 - Circum Circle
 - Closest Pair of points
 - Convex Hull
 - Delanuy Triangulation * 
-- Antipodal points (rotating calipers)
-- Check Point Inside Polygon
 - Distance from Point to Line
+- Lattice points (pick's theorem)
+- Line cut of a polygon
 - Line Hull Intersection + if space
-- Segment Line - Segment Line intersection (all intersections -plane intersection-)
-- Point projection over a line
 - Manhattan MST
 - Minimum Enclosing circle of a set of points
-- Check if a point is inside a segment
-- Point struct with std operations
-- Circle struct
+- Minkowski Sum * 
 - Point 3d struct +
 - Point inside Hull 
-- Polygon area
-- Centroid of Polygon
-- Line cut of a polygon
+- Point projection over a line
+- Point struct with std operations
 - Point-segment distance(all distances)
+- Polar sort
+- Polygon area
+- Segment Line - Segment Line intersection (all intersections -plane intersection-)
 - Side of vector
 - Spherical Distance
-- Polar sort
-- Minkowski Sum * 
-- Lattice points (pick's theorem)
-
-
-## Data Structures
-- Rollback trick
-- Segment trees
-- Treap
-- Something 2D
-- Persistent segment tree
-- Ordered statistics
-- Sparse Table
-- Link-Cut Tree
-- Hash table
+- Two points radius circle
 
 ## Numerical
-- BigInteger
-    - +, -, *
 - Berlekamp-Massey
+- BigInteger
+    - +, /, *
 - FFT
-- NTT
 - FWHT
-- Lagrange's interpolation
-- Gold-section search
-- Newton's method
 - Gauss
-- XOR-basis
-- Linear recursion 
-- Simplex
+- Gold-section search
 - Integration's methods
-
-## DP optimization
-- CHT
-- LiChaoTree
-- D&C optimization
-- Knuth
-- Alien
-
-## Graph
-- Trees:
-    - Centroid
-    - HLD 
-    - LCA
-    - Cactus-edge
-- Flow:
-    - Dinic (Tested)
-    - Push relabel 
-    - Min Cost Max Flow (tourist)
-    - Hopcroft Karp (Tested)
-    - ...
-- General:
-    - SCC, Articulation, bridges
-    - BCC (ADDED)
-    - 2SAT (ADDED)
-    - Euler circuit (ADDED)
-    - Max Clique (ADDED)
-    - Directed MST
-    - SPFA
-- Offline Dynamic Connectivity 
-    - DSU + rollback
+- Lagrange's interpolation (normal and aritmetic)
+- Linear recursion 
+- Newton's method
+- NTT
+- Simplex
+- XOR-basis
 
 ## Combinatorics
 - Burnside Lemma
-- Stirling numbers 
 - Extended binomial from Brayan's template 
+- Stirling numbers 
 
 ## Number Theory
-- sieve
-- harmonic partition (ceil and floor)
-- diophantine equation
 - CRT
-- miller rabin
-- pollard rho
-- Multiplicative functions (phi, moebius, sigma)
-- linear congruence
+- diophantine equation
 - discrete logarithm
-- primitive root
 - discrete root
 - Floyd's cycle detection
+- harmonic partition (ceil and floor)
+- linear congruence
+- miller rabin
+- Multiplicative functions (phi, moebius, sigma)
+- pollard rho
+- primitive root
+- sieve
 
+## Data Structures
+- Link-Cut Tree
+- Mo's Algorithm
+- Ordered statistics
+- Persistent segment tree
+- DSU with rollbacks
+- Rollback trick
+- Segment trees
+- Something 2D
+- Sparse Table
+- Treap
+
+## DP optimization
+- Alien
+- CHT
+- D&C optimization
+- Knuth
+- LiChaoTree
+
+## Graph
+- Flow:
+    - Dinic (Tested)
+    - Push relabel 
+    - Flow With Lower Bound	
+    - Min Cost Max Flow (tourist)
+    - Hopcroft Karp
+    - ...
+- General:
+    - 2SAT (ADDED)
+    - BCC (ADDED)
+    - Directed MST
+    - Euler circuit (ADDED)
+    - Max Clique (ADDED)
+    - SPFA
+    - Gabow SCC, Articulation, bridges
+- Trees:
+    - Cactus-edge
+    - Centroid
+    - HLD 
+    - LCA
 ## Strings
-- Suffix Array + LCP
-- Z-function
-- KMP
-- Manacher
 - Aho-Corasick
 - Hashing
+- KMP (TESTED)
+- Manacher (TESTED)
+- Suffix Array + LCP (TESTED)
 - Trie 
+- Z-function (TESTED)
