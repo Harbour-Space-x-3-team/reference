@@ -88,7 +88,7 @@
 - sieve
 
 ## Data Structures
-- Link-Cut Tree
+- Link-Cut Tree (ADDED)
 - Mo's Algorithm (ADDED)
 - Ordered statistics (ADDED)
 - Persistent segment tree
