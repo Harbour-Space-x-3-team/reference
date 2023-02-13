@@ -92,7 +92,7 @@
 - Rollback trick
 - Segment trees
 - Something 2D
-- Sparse Table
+- Sparse Table (ADDED)
 - Treap
 
 ## DP optimization
