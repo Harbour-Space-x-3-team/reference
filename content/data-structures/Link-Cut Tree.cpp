@@ -2,25 +2,20 @@ struct LINK_CUT_TREE {
     struct node {
         node *ch[2], *p;
         bool rev;
-        int sz, vsub, sub;
-        int val, sum, lazy;
+        int sz, vsub, sub, val, sum, lazy;
 
         node() {
             ch[0] = ch[1] = p = NULL;
-            rev = 0;
-            sz = vsub = sub = 0;
-            val = sum = lazy = 0;
+            rev = 0, sz = vsub = sub = 0, val = sum = lazy = 0;
             update();
         }
 
         int get_sz(node *x) {
             return x ? x->sz : 0;
         }
-
         int get_sub(node *x) {
             return x ? x->sub : 0;
         }
-
         int get_sum(node *x) {
             return x ? x->sum : 0;
         }
@@ -33,8 +28,7 @@ struct LINK_CUT_TREE {
                 rev = 0;
             }
             if(lazy) {
-                sum += sz*lazy;
-                val += lazy;
+                sum += sz*lazy, val += lazy;
                 if(ch[0])ch[0]->lazy += lazy;
                 if(ch[1])ch[1]->lazy += lazy;
                 lazy = 0;
@@ -87,8 +81,7 @@ struct LINK_CUT_TREE {
                 rot();
             }
             if(!is_root())p->prop(), prop(), rot();
-            prop();
-            update();
+            prop(), update();
         }
 
         node* find_by_order(int k) { // find by order of splay tree
@@ -115,9 +108,7 @@ struct LINK_CUT_TREE {
         }
 
         void make_root() { // make node root of LCT component
-            access();
-            rev ^= 1;
-            access();
+            access(), rev ^= 1, access();
             assert(!ch[0] && !ch[1]);
         }
 
@@ -154,9 +145,7 @@ struct LINK_CUT_TREE {
         }
 
         void set(int v) {
-            access();
-            val = v;
-            update();
+            access(), val = v, update();
         }
 
         friend void link(node *x, node *y, bool force = 0) { // make y parent of x
@@ -166,9 +155,7 @@ struct LINK_CUT_TREE {
                 x->access();
                 assert(!x->ch[0]);
             }
-            y->access();
-            set_link(y, x, 1);
-            y->update();
+            y->access(), set_link(y, x, 1), y->update();
         }
 
         friend void cut(node *y) { // cut y from its parent
