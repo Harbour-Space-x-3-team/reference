@@ -1,9 +1,7 @@
 template <typename T, class F = less<T>>
-struct RMQ
-{
+struct RMQ {
 	vector<vector<T>> A;
-	RMQ(const vector<T> &arr)
-	{
+	RMQ(const vector<T> &arr) {
 		A.resize(arr.size());
 		for (int i = 0; i < A.size(); i++)
 			A[i].resize(31 - __builtin_clz(arr.size()) + 1), A[i][0] = arr[i];
@@ -14,8 +12,7 @@ struct RMQ
 				else
 					A[i][j] = A[i + (1 << (j - 1))][j - 1];
 	}
-	T query(int a, int b)
-	{
+	T query(int a, int b) {
 		if (a > b)
 			swap(a, b);
 		int k = 31 - __builtin_clz(b - a + 1);
