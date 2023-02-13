@@ -3,136 +3,136 @@
 
 ## Misc
 - clock per second
-- order-statistics
 - mersenne rng() 
+- order-statistics
 
 ## Formulas 
-- Pick's theorem
-- Catalan (k-folded Catalan)
-- Stirling numbers 
-- Burnside's lemma
 - Binomial coefficient formulas
+- Burnside's lemma
+- Catalan (k-folded Catalan)
 - Fibonnaci Advanced Formulas
+- Pick's theorem
+- Stirling numbers 
 
 ## Geometry
+- 2 Circle tangents
+- Antipodal points (rotating calipers)
+- Centroid of Polygon
+- Check if a point is inside a segment
+- Check Point Inside Polygon
+- Circle struct
 - Circle-Circle Intersection
 - Circle-Line Intersection
-- Circle-Polygon Intersection (area)
-- 2 Circle tangents
 - Circle-point tangents
-- Two points radius circle
+- Circle-Polygon Intersection (area)
 - Circum Circle
 - Closest Pair of points
 - Convex Hull
 - Delanuy Triangulation * 
-- Antipodal points (rotating calipers)
-- Check Point Inside Polygon
 - Distance from Point to Line
+- Lattice points (pick's theorem)
+- Line cut of a polygon
 - Line Hull Intersection + if space
-- Segment Line - Segment Line intersection (all intersections -plane intersection-)
-- Point projection over a line
 - Manhattan MST
 - Minimum Enclosing circle of a set of points
-- Check if a point is inside a segment
-- Point struct with std operations
-- Circle struct
+- Minkowski Sum * 
 - Point 3d struct +
 - Point inside Hull 
-- Polygon area
-- Centroid of Polygon
-- Line cut of a polygon
+- Point projection over a line
+- Point struct with std operations
 - Point-segment distance(all distances)
+- Polar sort
+- Polygon area
+- Segment Line - Segment Line intersection (all intersections -plane intersection-)
 - Side of vector
 - Spherical Distance
-- Polar sort
-- Minkowski Sum * 
-- Lattice points (pick's theorem)
+- Two points radius circle
 
 
 ## Data Structures
-- Rollback trick
-- Mo's Algorithm
-- Segment trees
-- Treap
-- Something 2D
-- Persistent segment tree
-- Ordered statistics
-- Sparse Table
-- Link-Cut Tree
 - Hash table
+- Link-Cut Tree
+- Mo's Algorithm
+- Ordered statistics
+- Persistent segment tree
+- Rollback trick
+- Segment trees
+- Something 2D
+- Sparse Table
+- Treap
 
 ## Numerical
-- BigInteger
-    - +, -, *
 - Berlekamp-Massey
+- BigInteger
+    - +, /, *
 - FFT
-- NTT
 - FWHT
-- Lagrange's interpolation (normal and aritmetic)
-- Gold-section search
-- Newton's method
 - Gauss
-- XOR-basis
-- Linear recursion 
-- Simplex
+- Gold-section search
 - Integration's methods
+- Lagrange's interpolation (normal and aritmetic)
+- Linear recursion 
+- Newton's method
+- NTT
+- Simplex
+- XOR-basis
 
 ## DP optimization
+- Alien
 - CHT
-- LiChaoTree
 - D&C optimization
 - Knuth
-- Alien
+- LiChaoTree
 
 ## Graph
+- Flow:
+    - Dinic (ADDED)
+    - Flow With Lower Bound	
+    - Hopcroft Karp
+    - Hungarian
+    - Min Cost Max Flow (tourist)
+    - Push relabel 
+    - ...
+- General:
+    - 2SAT (ADDED)
+    - BCC (ADDED)
+    - Directed MST
+    - Euler circuit (ADDED)
+    - Max Clique (ADDED)
+    - SPFA
+    - Gabow SCC, Articulation, bridges
+- Offline Dynamic Connectivity 
+    - DSU with rollbacks + Rollback Trick
 - Trees:
+    - Cactus-edge
     - Centroid
     - HLD 
     - LCA
-    - Cactus-edge
-- Flow:
-    - Dinic (ADDED)
-    - Push relabel 
-    - Min Cost Max Flow (tourist)
-    - Hopcroft Karp
-    - Hungarian
-    - Flow With Lower Bound	
-    - ...
-- General:
-    - Gabow SCC, Articulation, bridges
-    - BCC (ADDED)
-    - 2SAT (ADDED)
-    - Euler circuit (ADDED)
-    - Max Clique (ADDED)
-    - Directed MST
-    - SPFA
-- Offline Dynamic Connectivity 
-    - DSU with rollbacks + Rollback Trick
 
 ## Combinatorics
 - Burnside Lemma
-- Stirling numbers 
 - Extended binomial from Brayan's template 
+- Stirling numbers 
 
 ## Number Theory
-- sieve
-- harmonic partition (ceil and floor)
-- diophantine equation
 - CRT
-- miller rabin
-- pollard rho
-- Multiplicative functions (phi, moebius, sigma)
-- linear congruence
+- diophantine equation
 - discrete logarithm
-- primitive root
 - discrete root
 - Floyd's cycle detection
+- harmonic partition (ceil and floor)
+- linear congruence
+- miller rabin
+- Multiplicative functions (phi, moebius, sigma)
+- pollard rho
+- primitive root
+- sieve
 
 ## Strings
-- Suffix Array + LCP (TESTED)
-- Z-function (TESTED)
-- KMP (TESTED)
-- Manacher (TESTED)
 - Aho-Corasick
 - Hashing
+- KMP (TESTED)
+- Manacher (TESTED)
+- Suffix Array + LCP (TESTED)
 - Trie 
+- Z-function (TESTED)
