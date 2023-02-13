@@ -5,6 +5,7 @@
 - clock per second
 - mersenne rng() 
 - order-statistics
+- pragmas
 
 ## Formulas 
 - Binomial coefficient formulas
