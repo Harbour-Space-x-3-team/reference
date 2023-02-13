@@ -87,6 +87,7 @@
 - Mo's Algorithm
 - Ordered statistics
 - Persistent segment tree
+- DSU with rollbacks
 - Rollback trick
 - Segment trees
 - Something 2D
@@ -117,8 +118,6 @@
     - Max Clique (ADDED)
     - SPFA
     - Gabow SCC, Articulation, bridges
-- Offline Dynamic Connectivity 
-    - DSU with rollbacks + Rollback Trick
 - Trees:
     - Cactus-edge
     - Centroid
