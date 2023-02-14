@@ -96,9 +96,10 @@
 - DSU with rollbacks (ADDED)
 - Rollback trick (ADDED)
 - Segment trees (ADDED)
-- Something 2D
+- Fenwick Tree 2D (TESTED)
 - Sparse Table (ADDED)
-- Treap (TESTED)
+- Implicit Treap (TESTED)
+- Normal Treap (ADDED)
 
 ## DP optimization
 - Alien

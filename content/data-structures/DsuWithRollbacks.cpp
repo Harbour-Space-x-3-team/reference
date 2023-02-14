@@ -3,18 +3,10 @@ struct DSU_WITH_ROLLBACKS {
         int u, urank, v, vrank, comps;
         bool bipart, bipart_comp;
     };
-    stack<dsu_save> op;
-    vector<int> rnk;
-    vector<bool> col, bip;
-    bool bipartite;
-    int comps;
-
+    stack<dsu_save> op; vector<int> rnk;
+    vector<bool> col, bip; bool bipartite; int comps;
     DSU_WITH_ROLLBACKS() {}
-
-    DSU_WITH_ROLLBACKS(int N) {
-        init(N);
-    }
-
+    DSU_WITH_ROLLBACKS(int N) { init(N); }
     void init(int N) {
         rnk.clear(), col.clear(), bip.clear();
         while (!op.empty())
@@ -25,15 +17,12 @@ struct DSU_WITH_ROLLBACKS {
         }
         bipartite = true, comps = N;
     }
-
     pair<int, bool> find(int x) {
-        if (rnk[x] > 0)
-            return {x, col[x]};
+        if (rnk[x] > 0) return {x, col[x]};
         pair<int, bool> tp = find(-rnk[x]);
         tp.second ^= col[x];
         return tp;
     }
-
     void join(int a, int b) {
         pair<int, bool> ta = find(a), tb = find(b);
         a = ta.first, b = tb.first;
@@ -52,12 +41,9 @@ struct DSU_WITH_ROLLBACKS {
         col[b] = col[b] ^ (ta.second == tb.second);
         bip[a] = bip[a] & bip[b];
     }
-
     void rollback() {
-        if (op.empty())
-            return;
-        dsu_save x = op.top();
-        op.pop();
+        if (op.empty()) return;
+        dsu_save x = op.top(); op.pop();
         comps = x.comps, bipartite = x.bipart;
         rnk[x.u] = x.urank, col[x.u] = false, bip[x.u] = x.bipart_comp;
         rnk[x.v] = x.vrank, col[x.v] = false;
