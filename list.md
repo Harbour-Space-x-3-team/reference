@@ -86,7 +86,7 @@
 - Multiplicative functions (phi, moebius, sigma) (ADDED)
 - pollard rho (ADDED)
 - primitive root (ADDED)
-- sieve
+- sieve (ADDED)
 
 ## Data Structures
 - Link-Cut Tree (ADDED)
