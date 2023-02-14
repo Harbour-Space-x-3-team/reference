@@ -1,14 +1,11 @@
 void MO_S_ADD(int);
 void MO_S_REMOVE(int);
 ll MO_S_GET_ANSWER();
-
 vector<ll> MO_S_ALGORITHM(vector<pair<int,int>> &queries) {
     int Q = queries.size();
     //M = N/sqrt(Q)
     const int BLOCK_SIZE = 500;
-    struct Query {
-        int l, r, id;
-    };
+    struct Query { int l, r, id; };
     vector<Query> que(Q);
     for(int i = 0 ; i < Q ; i++) {
         que[i].l = queries[i].first;
@@ -19,8 +16,7 @@ vector<ll> MO_S_ALGORITHM(vector<pair<int,int>> &queries) {
         if(x.l/BLOCK_SIZE != y.l/BLOCK_SIZE)return x.l < y.l;
         return (x.l/BLOCK_SIZE&1) ? (x.r < y.r) : (x.r > y.r);
     });
-    int cur_l = 0;
-    int cur_r = -1;
+    int cur_l = 0, cur_r = -1;
     vector<ll> res(Q);
     for(Query q : que) {
         while(cur_l > q.l) {

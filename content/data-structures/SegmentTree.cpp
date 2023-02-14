@@ -4,12 +4,9 @@ template <typename Tnode,typename Tlazy>
 struct ST{
     vector<Tnode> st; int sz;
     vector<Tlazy> lazy; Tlazy neutraL; // if-lazy
-
     ST (int n,Tlazy _neutraL) : sz(n), st(2*n),
                                 lazy(2*n), neutraL(_neutraL) {} // if-lazy
-
     Tnode merge_(Tnode a, Tnode b) {}
-
     void push (int nod,int l,int r){ /** IF-LAZY */
         int mi = (l + r) >> 1;
         /// how lazy[nod] affects st[nod]
@@ -18,7 +15,6 @@ struct ST{
         }
         lazy[nod] = neutraL;
     }
-
     void build (vector<Tnode> &arr){build(0, 0, sz-1, arr);}
     void build (int nod,int l,int r,vector<Tnode> &arr){
         if (l == r) {
@@ -32,7 +28,6 @@ struct ST{
         st[nod] = merge_(st[nod+1], st[nod+((mi-l+1)<<1)]);
         lazy[nod] = neutraL; // if-lazy
     }
-
     void updateRange (int x,int y,Tlazy v) { /** IF-LAZY */
         updateRange(0, 0, sz-1, x, y, v);
     }
@@ -49,7 +44,6 @@ struct ST{
         else push(nod+((mi-l+1)<<1), mi+1, r);
         st[nod] = merge_(st[nod+1] , st[nod+((mi-l+1)<<1)]);
     }
-
     void updatePoint(int id, Tnode val) {
         updatePoint(0, 0, sz - 1, id, val);
     }
@@ -68,7 +62,6 @@ struct ST{
         }
         st[nod] = merge_(st[nod+1], st[nod+((mi-l+1)<<1)]);
     }
-
     Tnode query (int l,int r) {return query(0, 0, sz-1, l, r);}
     Tnode query (int nod,int l,int r,int x,int y) {
         push(nod, l, r); // if-lazy

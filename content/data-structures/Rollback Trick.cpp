@@ -1,27 +1,14 @@
 template<typename F, typename Q, typename T, typename D>
 struct ROLLBACK_TRICK {
     typedef long long ll;
-    vector<vector<T>> ST;
-    vector<vector<Q>> arr;
-    int N;
-
-    void update(T &x, D &DS) {
-        DS.join(x.first, x.second);
-    }
-
-    F query(Q &x, D &DS) {
-        return DS.rnk[DS.find(x).first];
-    }
-
-    void rollback(D &DS) {
-        DS.rollback();
-    }
-
+    vector<vector<T>> ST; vector<vector<Q>> arr; int N;
+    void update(T &x, D &DS) { DS.join(x.first, x.second); }
+    F query(Q &x, D &DS) { return DS.rnk[DS.find(x).first]; }
+    void rollback(D &DS) { DS.rollback(); }
     void add_to_tree(int nodo, int l, int r, int a, int b, T &qu) {
-        if(r < a || l > b)return;
+        if(r < a || l > b) return;
         if(a <= l && r <= b) {
-            ST[nodo].push_back(qu);
-            return;
+            ST[nodo].push_back(qu); return;
         }
         int mid = (l+r)/2;
         add_to_tree(nodo*2, l, mid, a, b, qu);
@@ -41,11 +28,12 @@ struct ROLLBACK_TRICK {
             dfs(nodo*2, l, mid, ans, DS);
             dfs(nodo*2+1, mid+1, r, ans, DS);
         }
-        for(int i = 0 ; i < ST[nodo].size() ; i++)rollback(DS);
+        for(int i = 0 ; i < ST[nodo].size() ; i++) rollback(DS);
     }
-
-    vector<F> solve(vector<Q> &qu, vector<ll> &querys, vector<T> &vect, vector<pair<ll,ll>> &ranges, D &DS) {
-        assert(qu.size() == querys.size()), assert(vect.size() == ranges.size());
+    vector<F> solve(vector<Q> &qu, vector<ll> &querys,
+        vector<T> &vect, vector<pair<ll,ll>> &ranges, D &DS) {
+        assert(qu.size() == querys.size()),
+            assert(vect.size() == ranges.size());
         vector<pair<ll,ll>> mp;
         for(int i = 0 ; i < querys.size() ; i++) {
             mp.push_back({querys[i], i});
@@ -61,19 +49,17 @@ struct ROLLBACK_TRICK {
         for(int i = 0 ; i < mp.size() ; i++) {
             if(mp[i].first != temp)cont++;
             if(mp[i].second < querys.size())querys[mp[i].second] = cont;
-            else if(mp[i].second >= querys.size() + ranges.size())ranges[mp[i].second-querys.size()-ranges.size()].second = cont;
+            else if(mp[i].second >= querys.size() + ranges.size())
+                ranges[mp[i].second-querys.size()-ranges.size()].second = cont;
             else ranges[mp[i].second-querys.size()].first = cont;
             temp = mp[i].first;
         }
-        N = cont+1;
-        ST.clear(), ST.resize(4*(N+4));
-        for(int i = 0 ; i < vect.size() ; i++) {
+        N = cont+1; ST.clear(), ST.resize(4*(N+4));
+        for(int i = 0 ; i < vect.size() ; i++)
             add_query(vect[i], ranges[i].first, ranges[i].second);
-        }
         arr.clear(), arr.resize(N);
-        for(int i = 0 ; i < querys.size() ; i++) {
+        for(int i = 0 ; i < querys.size() ; i++)
             arr[querys[i]].push_back(qu[i]);
-        }
         vector<F> ans;
         dfs(1, 0, N-1, ans, DS);
         return ans;

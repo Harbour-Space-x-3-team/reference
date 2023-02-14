@@ -57,10 +57,4 @@ struct Treap {
         push(u);
         return u;
     }
-    void print(Node *u) {
-        push(u);
-        if (u->l) print(u->l);
-        cerr << u->val << " ";
-        if (u->r) print(u->r);
-    }
 };
