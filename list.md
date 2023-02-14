@@ -74,18 +74,19 @@
 - Stirling numbers 
 
 ## Number Theory
-- CRT
-- diophantine equation
-- discrete logarithm
-- discrete root
-- Floyd's cycle detection
-- harmonic partition (ceil and floor)
-- linear congruence
-- miller rabin
-- Multiplicative functions (phi, moebius, sigma)
-- pollard rho
-- primitive root
-- sieve
+- CRT (ADDED)
+- diophantine equation (ADDED)
+- extended GCD (ADDED)
+- discrete logarithm (ADDED)
+- discrete root (ADDED)
+- Floyd's cycle detection (ADDED)
+- harmonic partition (ceil and floor) (ADDED)
+- linear congruence (ADDED)
+- miller rabin (ADDED)
+- Multiplicative functions (phi, moebius, sigma) (ADDED)
+- pollard rho (ADDED)
+- primitive root (ADDED)
+- sieve (ADDED)
 
 ## Data Structures
 - Link-Cut Tree (ADDED)
