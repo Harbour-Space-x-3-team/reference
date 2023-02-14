@@ -85,7 +85,7 @@
 - miller rabin (ADDED)
 - Multiplicative functions (phi, moebius, sigma)
 - pollard rho (ADDED)
-- primitive root
+- primitive root (ADDED)
 - sieve
 
 ## Data Structures
