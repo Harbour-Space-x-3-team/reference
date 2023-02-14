@@ -6,7 +6,6 @@ struct AHO_CORASICK {
     vector<int> pt_string, dict_link, vtime, link, abi, ch, p;
     int cant_string = 0, int sz = 0;
     bool ok_match = false, ok_link_tree = false;
-
     void init() {
         lim.clear(), glink.clear(), words.clear(), tgo.clear(), pt_string.clear();
         dict_link.clear(), vtime.clear(), link.clear(), abi.clear(), ch.clear(), p.clear();
@@ -14,27 +13,18 @@ struct AHO_CORASICK {
         ok_match = false, ok_link_tree = false;
         new_node(-1,-1);
     }
-
     void build(vector<T> &vect) {
         init();
         for(int i = 0 ; i < vect.size() ; i++)
             add_string(vect[i]);
     }
-
-    int size() {
-        return sz;
-    }
-
+    int size() {return sz;}
     void new_node(int tp, int tch) {
         sz++;
         tgo.emplace_back(), dict_link.push_back(-1), words.emplace_back();
         link.push_back(-1), ch.push_back(tch), p.push_back(tp);
     }
-
-    AHO_CORASICK() {
-        init();
-    }
-
+    AHO_CORASICK() { init(); }
     void add_string(T cad) {
         int pt = 0;
         for(int i = 0 ; i < cad.size() ; i++) {
@@ -50,7 +40,6 @@ struct AHO_CORASICK {
         words[pt].push_back(pt_string.size());
         pt_string.push_back(pt);
     }
-
     void build_link_tree() {
         ok_link_tree = true;
         glink.resize(sz);
@@ -58,7 +47,6 @@ struct AHO_CORASICK {
             glink[get_link(i)].push_back(i);
         }
     }
-
     void build_match() {
         ok_match = true;
         if(ok_link_tree == false)build_link_tree();
@@ -73,14 +61,12 @@ struct AHO_CORASICK {
         };
         DFS(0);
     }
-
     void abi_update(int x, int v) {
         while(x < abi.size()) {
             abi[x] += v;
             x += x&-x;
         }
     }
-
     int abi_query(int x) {
         int res = 0;
         while(x) {
@@ -89,11 +75,9 @@ struct AHO_CORASICK {
         }
         return res;
     }
-
     int abi_range(int a, int b) {
         return abi_query(b) - abi_query(a-1);
     }
-
     vector<int> match(vector<T> vcad) {
         if(ok_match == false)build_match();
         vector<int> ups;
@@ -106,23 +90,19 @@ struct AHO_CORASICK {
             }
         }
         vector<int> res(pt_string.size());
-        for(int i = 0 ; i < pt_string.size() ; i++) {
+        for(int i = 0 ; i < pt_string.size() ; i++)
             res[i] = abi_range(lim[pt_string[i]].first, lim[pt_string[i]].second);
-        }
-        for(auto x : ups) {
+        for(auto x : ups)
             abi_update(x, -1);
-        }
         return res;
     }
-
     vector<int> match_offline(vector<T> vcad) {
         if(ok_link_tree == false)build_link_tree();
         vector<int> dp(sz);
         for(auto cad : vcad) {
             int pt = 0;
-            for(int i = 0 ; i < cad.size() ; i++) {
+            for(int i = 0 ; i < cad.size() ; i++)
                 pt = go(pt, cad[i]), dp[pt]++;
-            }
         }
         function<void(int)> DFS = [&](int nodo) {
             for(auto v : glink[nodo]) {
@@ -131,12 +111,10 @@ struct AHO_CORASICK {
         };
         DFS(0);
         vector<int> res(pt_string.size());
-        for(int i = 0 ; i < pt_string.size() ; i++) {
+        for(int i = 0 ; i < pt_string.size() ; i++)
             res[i] = dp[pt_string[i]];
-        }
         return res;
     }
-
     int get_dictionary_link(int nodo) {
         if(dict_link[nodo] == -1) {
             if(nodo == 0 || p[nodo] == 0)dict_link[nodo] = 0;
@@ -148,7 +126,6 @@ struct AHO_CORASICK {
         }
         return dict_link[nodo];
     }
-
     int get_link(int nodo) {
         if(link[nodo] == -1) {
             if(nodo == 0 || p[nodo] == 0)link[nodo] = 0;
@@ -156,7 +133,6 @@ struct AHO_CORASICK {
         }
         return link[nodo];
     }
-
     int go(int nodo, F tch) {
         auto it = &tgo[nodo][tch];
         if((*it).second == false) {
