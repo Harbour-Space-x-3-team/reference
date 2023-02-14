@@ -91,13 +91,13 @@
 - Link-Cut Tree (ADDED)
 - Mo's Algorithm (ADDED)
 - Ordered statistics (ADDED)
-- Persistent segment tree
+- Persistent segment tree (TESTED)
 - DSU with rollbacks (ADDED)
 - Rollback trick (ADDED)
-- Segment trees
+- Segment trees (ADDED)
 - Something 2D
 - Sparse Table (ADDED)
-- Treap
+- Treap (TESTED)
 
 ## DP optimization
 - Alien
@@ -133,5 +133,4 @@
 - KMP (TESTED)
 - Manacher (TESTED)
 - Suffix Array + LCP (TESTED)
-- Trie 
 - Z-function (TESTED)

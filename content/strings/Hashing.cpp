@@ -28,14 +28,10 @@ struct HashInterval {
         return ha[b + 1] - ha[a] * pw[b - a + 1];
     }
 };
-
-H hashString(string& s){
-    H h;
-    for(char c : s)
-        h = h * BASE + c;
+H hashString(string& s){ H h;
+    for(char c : s) h = h * BASE + c;
     return h;
 }
-
 // struct H for two hashes mod 2 primes
 // use ull() to get values of hash in unsigned long long
 template<int M, class B>
@@ -50,5 +46,4 @@ struct HA {
     bool operator<(HA o) const { return (ull)*this < (ull)o; }
 };
 typedef HA<1000000007, HA<1000000009, unsigned>> H;
-
 static const H BASE(311, HA<1000000009, unsigned>(20003));
