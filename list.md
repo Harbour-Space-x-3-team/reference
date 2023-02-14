@@ -82,9 +82,9 @@
 - Floyd's cycle detection (ADDED)
 - harmonic partition (ceil and floor) (ADDED)
 - linear congruence (ADDED)
-- miller rabin
+- miller rabin (ADDED)
 - Multiplicative functions (phi, moebius, sigma)
-- pollard rho
+- pollard rho (ADDED)
 - primitive root
 - sieve
 
