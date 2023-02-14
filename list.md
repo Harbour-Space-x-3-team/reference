@@ -79,7 +79,7 @@
 - extended GCD (ADDED)
 - discrete logarithm (ADDED)
 - discrete root (ADDED)
-- Floyd's cycle detection
+- Floyd's cycle detection (ADDED)
 - harmonic partition (ceil and floor)
 - linear congruence
 - miller rabin
