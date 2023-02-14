@@ -81,7 +81,7 @@
 - discrete root (ADDED)
 - Floyd's cycle detection (ADDED)
 - harmonic partition (ceil and floor) (ADDED)
-- linear congruence
+- linear congruence (ADDED)
 - miller rabin
 - Multiplicative functions (phi, moebius, sigma)
 - pollard rho
