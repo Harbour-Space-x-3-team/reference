@@ -74,9 +74,9 @@
 - Stirling numbers 
 
 ## Number Theory
-- CRT
-- diophantine equation
-- extended GCD
+- CRT (ADDED)
+- diophantine equation (ADDED)
+- extended GCD (ADDED)
 - discrete logarithm
 - discrete root
 - Floyd's cycle detection
