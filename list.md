@@ -83,7 +83,7 @@
 - harmonic partition (ceil and floor) (ADDED)
 - linear congruence (ADDED)
 - miller rabin (ADDED)
-- Multiplicative functions (phi, moebius, sigma)
+- Multiplicative functions (phi, moebius, sigma) (ADDED)
 - pollard rho (ADDED)
 - primitive root (ADDED)
 - sieve
