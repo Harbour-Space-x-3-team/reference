@@ -1,7 +1,4 @@
-/*
-	Solve a^x=b (mod M)
-*/
-
+// Solve a^x=b (mod M)
 ll dlog(ll a, ll b, ll M) {
     map<ll, ll> _hash;
     ll n = euler_phi(M), k = sqrt(n);

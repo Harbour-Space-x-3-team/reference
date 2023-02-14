@@ -78,7 +78,7 @@
 - diophantine equation (ADDED)
 - extended GCD (ADDED)
 - discrete logarithm (ADDED)
-- discrete root
+- discrete root (ADDED)
 - Floyd's cycle detection
 - harmonic partition (ceil and floor)
 - linear congruence
