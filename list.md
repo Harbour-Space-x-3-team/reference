@@ -13,6 +13,7 @@
 - Fibonnaci Advanced Formulas
 - Pick's theorem
 - Stirling numbers 
+- Apollonius' circle
 
 ## Geometry
 - 2 Circle tangents
