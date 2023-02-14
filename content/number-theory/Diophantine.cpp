@@ -25,8 +25,8 @@ bool find_any_solution(T a, T b, T c, T &x, T &y, T &g) {
     if (c % g != 0) {
         return false;
     }
-    T dx = c / a, c -= dx * a;
-    T dy = c / b, c -= dy * b;
+    T dx = c / a; c -= dx * a;
+    T dy = c / b; c -= dy * b;
     x = dx + (T) ((__int128) x * (c / g) % b);
     y = dy + (T) ((__int128) y * (c / g) % a);
     g = abs(g);
