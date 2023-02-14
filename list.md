@@ -77,7 +77,7 @@
 - CRT (ADDED)
 - diophantine equation (ADDED)
 - extended GCD (ADDED)
-- discrete logarithm
+- discrete logarithm (ADDED)
 - discrete root
 - Floyd's cycle detection
 - harmonic partition (ceil and floor)
