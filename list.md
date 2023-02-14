@@ -76,6 +76,7 @@
 ## Number Theory
 - CRT
 - diophantine equation
+- extended GCD
 - discrete logarithm
 - discrete root
 - Floyd's cycle detection
