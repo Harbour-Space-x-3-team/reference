@@ -80,7 +80,7 @@
 - discrete logarithm (ADDED)
 - discrete root (ADDED)
 - Floyd's cycle detection (ADDED)
-- harmonic partition (ceil and floor)
+- harmonic partition (ceil and floor) (ADDED)
 - linear congruence
 - miller rabin
 - Multiplicative functions (phi, moebius, sigma)
