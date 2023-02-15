@@ -128,7 +128,7 @@
     - Cactus-edge
     - Centroid (TESTED)
     - HLD (TESTED)
-    - LCA
+    - LCA (TESTED)
 ## Strings
 - Aho-Corasick (ADDED)
 - Hashing (TESTED)
