@@ -107,6 +107,7 @@
 - D&C optimization (NOT NEEDED NOW)
 - Knuth (NOT NEEDED NOW)
 - LiChaoTree (NOT NEEDED NOW)
+- SOS DP
 
 ## Graph
 - Flow:
