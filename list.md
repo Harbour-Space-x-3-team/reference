@@ -2,9 +2,9 @@
 ---
 
 ## Misc
-- clock per second
-- mersenne rng() 
-- pragmas
+- clock per second (ADDED)
+- mersenne rng() (ADDED)
+- pragmas (ADDED)
 
 ## Formulas 
 - Binomial coefficient formulas
@@ -59,15 +59,14 @@
     - +, /, *
 - FFT (tested)
 - FWHT (tested)
-- Gauss
-- Gold-section search
-- Integration's methods
-- Lagrange's interpolation (normal and aritmetic)
+- Gauss (tested)
+- Gold-section search (added)
 - Linear recursion 
-- Newton's method
-- NTT (tested)
-- Simplex
-- XOR-basis
+- Integration methods (SIMPSON ADDED)
+- Lagrange's interpolation (normal and aritmetic) (ADDED)
+- Newton's method (ADDED)
+- Simplex (NOT NEEDED NOW)
+- XOR-basis (ADDED)
 
 ## Combinatorics
 - Burnside Lemma
@@ -75,46 +74,48 @@
 - Stirling numbers 
 
 ## Number Theory
-- CRT
-- diophantine equation
-- discrete logarithm
-- discrete root
-- Floyd's cycle detection
-- harmonic partition (ceil and floor)
-- linear congruence
-- miller rabin
-- Multiplicative functions (phi, moebius, sigma)
-- pollard rho
-- primitive root
-- sieve
+- CRT (ADDED)
+- diophantine equation (ADDED)
+- extended GCD (ADDED)
+- discrete logarithm (ADDED)
+- discrete root (ADDED)
+- Floyd's cycle detection (ADDED)
+- harmonic partition (ceil and floor) (ADDED)
+- linear congruence (ADDED)
+- miller rabin (ADDED)
+- Multiplicative functions (phi, moebius, sigma) (ADDED)
+- pollard rho (ADDED)
+- primitive root (ADDED)
+- sieve (ADDED)
 
 ## Data Structures
-- Link-Cut Tree
-- Mo's Algorithm
-- Ordered statistics
-- Persistent segment tree
-- DSU with rollbacks
-- Rollback trick
-- Segment trees
-- Something 2D
-- Sparse Table
-- Treap
+- Link-Cut Tree (ADDED)
+- Mo's Algorithm (ADDED)
+- Ordered statistics (ADDED)
+- Persistent segment tree (TESTED)
+- DSU with rollbacks (ADDED)
+- Rollback trick (ADDED)
+- Segment trees (ADDED)
+- Fenwick Tree 2D (TESTED)
+- Sparse Table (ADDED)
+- Implicit Treap (TESTED)
+- Normal Treap (ADDED)
 
 ## DP optimization
-- Alien
-- CHT
-- D&C optimization
-- Knuth
-- LiChaoTree
+- Alien (NOT NEEDED NOW)
+- CHT (ADDED)
+- D&C optimization (NOT NEEDED NOW)
+- Knuth (NOT NEEDED NOW)
+- LiChaoTree (ADDED)
+- SOS DP (ADDED)
 
 ## Graph
 - Flow:
-    - Dinic (Tested - pending to add a faster implementation)
-    - Push relabel 
-    - Flow With Lower Bound	
-    - Min Cost Max Flow (tourist)
+    - Dinic (Tested)
+    - Push relabel (Tested)
+    - Flow With Lower Bound	(Added)
+    - Min Cost Max Flow (Tested)
     - Hopcroft Karp (Tested)
-    - ...
 - General:
     - 2SAT (ADDED)
     - BCC (ADDED)
@@ -122,17 +123,17 @@
     - Euler circuit (ADDED)
     - Max Clique (ADDED)
     - SPFA
-    - Gabow SCC, Articulation, bridges
+    - Gabow SCC, Articulation, bridges (ADDED)
 - Trees:
     - Cactus-edge
-    - Centroid
-    - HLD 
-    - LCA
+    - Centroid (TESTED)
+    - HLD (TESTED)
+    - LCA (TESTED)
+    
 ## Strings
-- Aho-Corasick
-- Hashing
+- Aho-Corasick (ADDED)
+- Hashing (TESTED)
 - KMP (TESTED)
 - Manacher (TESTED)
 - Suffix Array + LCP (TESTED)
-- Trie 
 - Z-function (TESTED)
