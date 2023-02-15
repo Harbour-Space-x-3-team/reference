@@ -54,24 +54,20 @@ struct AHO_CORASICK {
         int ct = 0;
         function<void(int)> DFS = [&](int nodo) {
             vtime[nodo] = ++ct;
-            for(auto v : glink[nodo]) {
-                DFS(v);
-            }
+            for(auto v : glink[nodo]) DFS(v);
             lim[nodo] = {vtime[nodo], ct};
         };
         DFS(0);
     }
     void abi_update(int x, int v) {
         while(x < abi.size()) {
-            abi[x] += v;
-            x += x&-x;
+            abi[x] += v; x += x&-x;
         }
     }
     int abi_query(int x) {
         int res = 0;
         while(x) {
-            res += abi[x];
-            x -= x&-x;
+            res += abi[x]; x -= x&-x;
         }
         return res;
     }
