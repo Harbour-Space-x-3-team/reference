@@ -2,9 +2,9 @@
 ---
 
 ## Misc
-- clock per second
-- mersenne rng() 
-- pragmas
+- clock per second (ADDED)
+- mersenne rng() (ADDED)
+- pragmas (ADDED)
 
 ## Formulas 
 - Binomial coefficient formulas
@@ -60,13 +60,12 @@
 - FWHT
 - Gauss
 - Gold-section search
-- Integration's methods
-- Lagrange's interpolation (normal and aritmetic)
-- Linear recursion 
-- Newton's method
+- Integration's methods (SIMPSON ADDED)
+- Lagrange's interpolation (normal and aritmetic) (ADDED)
+- Newton's method (ADDED)
 - NTT
-- Simplex
-- XOR-basis
+- Simplex (NOT NEEDED NOW)
+- XOR-basis (ADDED)
 
 ## Combinatorics
 - Burnside Lemma
