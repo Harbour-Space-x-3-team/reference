@@ -7,13 +7,14 @@
 - pragmas (ADDED)
 
 ## Formulas 
-- Binomial coefficient formulas
-- Burnside's lemma
-- Catalan (k-folded Catalan)
+- Binomial coefficient formulas (NOT KNOW WHAT TO ADD)
+- Burnside's lemma (NOT NEEDED)
+- Catalan (k-folded Catalan) (ADDED)
 - Fibonnaci Advanced Formulas
-- Pick's theorem
-- Stirling numbers 
-- Apollonius' circle
+- Pick's theorem (ADDED)
+- Stirling numbers (ADDED)
+- Apollonius' circle (NOT NEEDED)
+- Euler Formula For Planar Graphs (ADDED)
 
 ## Geometry
 - 2 Circle tangents
