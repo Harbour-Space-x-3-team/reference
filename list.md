@@ -65,7 +65,7 @@
 - Lagrange's interpolation (normal and aritmetic)
 - Linear recursion 
 - Newton's method
-- NTT
+- NTT (tested)
 - Simplex
 - XOR-basis
 
