@@ -2,9 +2,9 @@
 ---
 
 ## Misc
-- clock per second
-- mersenne rng() 
-- pragmas
+- clock per second (ADDED)
+- mersenne rng() (ADDED)
+- pragmas (ADDED)
 
 ## Formulas 
 - Binomial coefficient formulas
