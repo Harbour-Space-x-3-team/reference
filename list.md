@@ -126,7 +126,7 @@
     - Gabow SCC, Articulation, bridges (ADDED)
 - Trees:
     - Cactus-edge
-    - Centroid
+    - Centroid (TESTED)
     - HLD (TESTED)
     - LCA
 ## Strings
