@@ -4,7 +4,7 @@ bool crt(ll k1, ll m1, ll k2, ll m2, ll &k, ll &m) {
     k2 %= m2;
     if (k2 < 0) k2 += m2;
     ll x, y, g;
-    if (!diophantine(m1, -m2, k2 - k1, x, y, g)) {
+    if (!find_any_solution(m1, -m2, k2 - k1, x, y, g)) {
         return false;
     }
     ll dx = m2 / g;
