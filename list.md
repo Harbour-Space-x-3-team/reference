@@ -111,9 +111,9 @@
 ## Graph
 - Flow:
     - Dinic (Tested)
-    - Push relabel 
-    - Flow With Lower Bound	
-    - Min Cost Max Flow (tourist)
+    - Push relabel (Tested)
+    - Flow With Lower Bound	(Added)
+    - Min Cost Max Flow (Tested)
     - Hopcroft Karp (Tested)
     - ...
 - General:
@@ -123,7 +123,7 @@
     - Euler circuit (ADDED)
     - Max Clique (ADDED)
     - SPFA
-    - Gabow SCC, Articulation, bridges
+    - Gabow SCC, Articulation, bridges (ADDED)
 - Trees:
     - Cactus-edge
     - Centroid
