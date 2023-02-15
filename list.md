@@ -62,17 +62,16 @@
 - FWHT (tested)
 - Gauss (tested)
 - Gold-section search (added)
-- Linear recursion 
 - Integration methods (SIMPSON ADDED)
 - Lagrange's interpolation (normal and aritmetic) (ADDED)
 - Newton's method (ADDED)
-- Simplex (NOT NEEDED NOW)
+- Simplex (ADDED)
 - XOR-basis (ADDED)
 
 ## Combinatorics
-- Burnside Lemma
+- Burnside Lemma (NOT NEEDED)
 - Extended binomial from Brayan's template (ADDED)
-- Stirling numbers 
+- Stirling numbers (ONLY FORMULA NEEDED)
 
 ## Number Theory
 - CRT (ADDED)
@@ -101,13 +100,13 @@
 - Sparse Table (ADDED)
 - Implicit Treap (TESTED)
 - Normal Treap (ADDED)
+- LiChaoTree (ADDED)
 
 ## DP optimization
 - Alien (NOT NEEDED NOW)
 - CHT (ADDED)
 - D&C optimization (NOT NEEDED NOW)
 - Knuth (NOT NEEDED NOW)
-- LiChaoTree (ADDED)
 - SOS DP (ADDED)
 
 ## Graph
