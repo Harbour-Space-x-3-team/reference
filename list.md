@@ -58,7 +58,7 @@
 - BigInteger
     - +, /, *
 - FFT (tested)
-- FWHT
+- FWHT (tested)
 - Gauss
 - Gold-section search
 - Integration's methods
