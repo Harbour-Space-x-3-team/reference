@@ -87,6 +87,7 @@
 - pollard rho (ADDED)
 - primitive root (ADDED)
 - sieve (ADDED)
+- floor sum (ADDED)
 
 ## Data Structures
 - Link-Cut Tree (ADDED)
