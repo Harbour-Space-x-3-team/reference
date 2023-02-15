@@ -123,7 +123,7 @@
     - Euler circuit (ADDED)
     - Max Clique (ADDED)
     - SPFA
-    - Gabow SCC, Articulation, bridges
+    - Gabow SCC, Articulation, bridges (ADDED)
 - Trees:
     - Cactus-edge
     - Centroid
