@@ -22,20 +22,35 @@
 		\item \verb@feenableexcept(29);@ kills the program on NaNs (\texttt 1), 0-divs (\texttt 4), infinities (\texttt 8) and denormals (\texttt{16}).
 	\end{itemize}
 
-\section{Optimization tricks}
+\section{Misc}
 	\verb@__builtin_ia32_ldmxcsr(40896);@ disables denormals (which make floats 20x slower near their minimum value).
 	\subsection{Bit hacks}
 		\begin{itemize}
 			\item \verb@x & -x@ is the least bit in \texttt{x}.
 			\item \verb@for (int x = m; x; ) { --x &= m; ... }@ loops over all subset masks of \texttt{m} (except \texttt{m} itself).
 			\item \verb@c = x&-x, r = x+c; (((r^x) >> 2)/c) | r@ is the next number after \texttt{x} with the same number of bits set.
-			\item \verb@rep(b,0,K) rep(i,0,(1 << K))@ \\ \verb@  if (i & 1 << b) D[i] += D[i^(1 << b)];@ computes all sums of subsets.
 		\end{itemize}
-	\subsection{Pragmas}
+	\subsection{Formulas}
 		\begin{itemize}
-			\item \lstinline{#pragma GCC optimize ("Ofast")} will make GCC auto-vectorize loops and optimizes floating points better.
-			\item \lstinline{#pragma GCC target ("avx2")} can double performance of vectorized code, but causes crashes on old machines.
-			\item \lstinline{#pragma GCC optimize ("trapv")} kills the program on integer overflows (but is really slow).
+		    \item Pick's Theorem: $A = i + \frac{b}{2} - 1$
+		    \item Euler's formula: $vertices - edges + faces = 2$ (In connected planar graphs)
+		    \item $Catalan_n = \frac{1}{n+1} \cdot \binom{2n}{n}$ = $\binom{2n}{n} - \binom{2n}{n+1} = \frac{2n!}{n!(n+1)!}$
+		    \item $Catalan_n^{(k)} = \frac{k+1}{n+k+1} \cdot \binom{2n+k}{n}$ Count of balanced parentheses sequences consisting of n+k
+                   pairs of parentheses where the first K
+                   symbols are open brackets.
+            \item Stirling Numbers of the First Kind:
+                 \begin{itemize}
+                    \item unsigned $s(n, k)$ counts the number of permutations of size n with $k$ cycles.
+                    \item $s(n+1, k) = -n \cdot s(n, k) + s(n, k - 1)$ (for unsigned just $n$ instead of $-n$)
+                    \item $s(0, 0) = 1$ and $s(0, n) = s(n, 0) = 0$ for $n > 0$.
+                    \item $(x)_n = \sum\limits_{k=0}^n{s(n, k)\cdot{x^k}}$ where $(x)_n = x(x-1)(x-2)...(x-n+1)$, so the stirling numbers are the coefficients of the rising factorials polynomial.
+                \end{itemize}
+           \item Stirling Numbers of the Second Kind:
+                 \begin{itemize}
+                     \item Number of ways to partition a set of n objects into k non-empty subsets.
+                     \item $S(n+1, k) = k\cdot{S(n, k)}+S(n, k-1)$
+                     \item $S(n, k) = \frac{1}{k!} \sum\limits_{i=0}^k -1^i \binom{k}{i} (k-i)^n$
+                 \end{itemize}
 		\end{itemize}
 	\kactlimport{FastMod.h}
 	\kactlimport{FastInput.h}
