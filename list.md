@@ -105,8 +105,8 @@
 - CHT (ADDED)
 - D&C optimization (NOT NEEDED NOW)
 - Knuth (NOT NEEDED NOW)
-- LiChaoTree (NOT NEEDED NOW)
-- SOS DP
+- LiChaoTree (ADDED)
+- SOS DP (ADDED)
 
 ## Graph
 - Flow:
