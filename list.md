@@ -57,7 +57,7 @@
 - Berlekamp-Massey (added)
 - BigInteger
     - +, /, *
-- FFT
+- FFT (tested)
 - FWHT
 - Gauss
 - Gold-section search
