@@ -54,7 +54,7 @@
 - Two points radius circle
 
 ## Numerical
-- Berlekamp-Massey
+- Berlekamp-Massey (added)
 - BigInteger
     - +, /, *
 - FFT
