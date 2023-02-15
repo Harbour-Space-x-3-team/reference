@@ -102,11 +102,11 @@
 - Normal Treap (ADDED)
 
 ## DP optimization
-- Alien
-- CHT
-- D&C optimization
-- Knuth
-- LiChaoTree
+- Alien (NOT NEEDED NOW)
+- CHT (ADDED)
+- D&C optimization (NOT NEEDED NOW)
+- Knuth (NOT NEEDED NOW)
+- LiChaoTree (NOT NEEDED NOW)
 
 ## Graph
 - Flow:
