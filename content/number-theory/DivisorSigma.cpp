@@ -6,7 +6,6 @@ ll divisor_sigma(ll n) {
     if (d * d == n) sigma += d;
     return sigma;
 }
-
 vector<ll> divisor_sigma(ll lo, ll hi) {
     vector<ll> ps = primes(sqrt(hi) + 1);
     vector<ll> res(hi - lo), sigma(hi - lo, 1);
