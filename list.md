@@ -70,7 +70,7 @@
 
 ## Combinatorics
 - Burnside Lemma
-- Extended binomial from Brayan's template 
+- Extended binomial from Brayan's template (ADDED)
 - Stirling numbers 
 
 ## Number Theory
