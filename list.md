@@ -13,6 +13,7 @@
 - Fibonnaci Advanced Formulas
 - Pick's theorem
 - Stirling numbers 
+- Apollonius' circle
 
 ## Geometry
 - 2 Circle tangents
@@ -53,17 +54,17 @@
 - Two points radius circle
 
 ## Numerical
-- Berlekamp-Massey
+- Berlekamp-Massey (added)
 - BigInteger
     - +, /, *
-- FFT
-- FWHT
-- Gauss
-- Gold-section search
-- Integration's methods (SIMPSON ADDED)
+- FFT (tested)
+- FWHT (tested)
+- Gauss (tested)
+- Gold-section search (added)
+- Linear recursion 
+- Integration methods (SIMPSON ADDED)
 - Lagrange's interpolation (normal and aritmetic) (ADDED)
 - Newton's method (ADDED)
-- NTT
 - Simplex (NOT NEEDED NOW)
 - XOR-basis (ADDED)
 
@@ -115,7 +116,6 @@
     - Flow With Lower Bound	(Added)
     - Min Cost Max Flow (Tested)
     - Hopcroft Karp (Tested)
-    - ...
 - General:
     - 2SAT (ADDED)
     - BCC (ADDED)
@@ -129,6 +129,7 @@
     - Centroid (TESTED)
     - HLD (TESTED)
     - LCA (TESTED)
+    
 ## Strings
 - Aho-Corasick (ADDED)
 - Hashing (TESTED)
