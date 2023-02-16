@@ -72,6 +72,7 @@
 - Burnside Lemma (NOT NEEDED)
 - Extended binomial from Brayan's template (ADDED)
 - Stirling numbers (ONLY FORMULA NEEDED)
+- K-PIE (ADDED) 
 
 ## Number Theory
 - CRT (ADDED)
