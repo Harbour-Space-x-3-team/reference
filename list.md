@@ -107,6 +107,7 @@
 - Monotonic Stack (ADDED)
 - Monotonic Stack Hard (ADDED)
 - RMQ 2D (ADDED)
+- Venice Trick (ADDED)
 
 ## DP optimization
 - Alien (NOT NEEDED NOW)
