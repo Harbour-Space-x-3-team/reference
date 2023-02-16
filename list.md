@@ -5,6 +5,7 @@
 - clock per second (ADDED)
 - mersenne rng() (ADDED)
 - pragmas (ADDED)
+- Integer Division (ADDED)
 
 ## Formulas 
 - Binomial coefficient formulas (NOT KNOW WHAT TO ADD)
