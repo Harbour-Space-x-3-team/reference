@@ -112,7 +112,7 @@
 ## DP optimization
 - Alien (NOT NEEDED NOW)
 - CHT (ADDED)
-- D&C optimization (NOT NEEDED NOW)
+- D&C optimization (ADDED)
 - Knuth (NOT NEEDED NOW)
 - SOS DP (ADDED)
 
