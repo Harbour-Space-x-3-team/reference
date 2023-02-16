@@ -17,42 +17,41 @@
 - Euler Formula For Planar Graphs (ADDED)
 
 ## Geometry
-- 2 Circle tangents
-- Antipodal points (rotating calipers)
-- Centroid of Polygon
-- Check if a point is inside a segment
-- Check Point Inside Polygon
-- Circle struct
-- Circle-Circle Intersection
-- Circle-Line Intersection
-- Circle-point tangents
-- Circle-Polygon Intersection (area)
-- 2 Circle tangents
-- Circle-point tangents
+- 2 Circle tangents (ADDED)
+- Antipodal points (rotating calipers) (ADDED)
+- Centroid of Polygon (ADDED)
+- Check if a point is inside a segment (ADDED)
+- Check Point Inside Polygon (ADDED)
+- Circle struct (ADDED)
+- Circle-Circle Intersection (ADDED)
+- Circle-Line Intersection (ADDED)
+- Circle-point tangents (ADDED)
+- Circle-Polygon Intersection (area) (ADDED)
+- 2 Circle tangents (ADDED)
+- Circle-point tangents (ADDED)
 - Point-Polygon tangents
 - Two points radius circle
-- Circum Circle
-- Closest Pair of points
-- Convex Hull
+- Circum Circle (ADDED)
+- Closest Pair of points (ADDED)
+- Convex Hull (ADDED)
 - Delanuy Triangulation * 
-- Distance from Point to Line
-- Lattice points (pick's theorem)
-- Line cut of a polygon
+- Distance from Point to Line 
+- Lattice points (pick's theorem) (ADDED)
+- Line cut of a polygon (ADDED)
 - Line Hull Intersection + if space
-- Manhattan MST
+- Manhattan MST (ADDED)
 - Minimum Enclosing circle of a set of points
 - Minkowski Sum * 
-- Point 3d struct +
+- Point 3d struct + (ADDED)
 - Point inside Hull 
-- Point projection over a line
-- Point struct with std operations
+- Point projection over a line (ADDED)
+- Point struct with std operations (ADDED)
 - Point-segment distance(all distances)
-- Polar sort
-- Polygon area
-- Segment Line - Segment Line intersection (all intersections -plane intersection-)
-- Side of vector
-- Spherical Distance
-- Two points radius circle
+- Polar sort (ADDED)
+- Polygon area (ADDED)
+- Segment Line - Segment Line intersection (all intersections -plane intersection-) (ADDED)
+- Side of vector (ADDED)
+- Spherical Distance (ADDED)
 
 ## Numerical
 - Berlekamp-Massey (added)
