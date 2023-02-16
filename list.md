@@ -104,6 +104,7 @@
 - Normal Treap (ADDED)
 - LiChaoTree (ADDED)
 - Monotonic Queue (ADDED)
+- Monotonic Stack (ADDED)
 
 ## DP optimization
 - Alien (NOT NEEDED NOW)
