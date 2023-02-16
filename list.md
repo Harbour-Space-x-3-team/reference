@@ -103,6 +103,7 @@
 - Implicit Treap (TESTED)
 - Normal Treap (ADDED)
 - LiChaoTree (ADDED)
+- Monotonic Queue (ADDED)
 
 ## DP optimization
 - Alien (NOT NEEDED NOW)
