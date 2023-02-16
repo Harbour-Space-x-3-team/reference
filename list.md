@@ -132,6 +132,7 @@
     - Max Clique (ADDED)
     - SPFA
     - Gabow SCC, Articulation, bridges (ADDED)
+    - Complement Graph omponent (ADDED)
 - Trees:
     - Cactus-edge
     - Centroid (TESTED)
