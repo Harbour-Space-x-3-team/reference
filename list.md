@@ -6,6 +6,7 @@
 - mersenne rng() (ADDED)
 - pragmas (ADDED)
 - Integer Division (ADDED)
+- Gray Code (ADDED)
 
 ## Formulas 
 - Binomial coefficient formulas (NOT KNOW WHAT TO ADD)
