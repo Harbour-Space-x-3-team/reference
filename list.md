@@ -128,6 +128,7 @@
     - BCC (ADDED)
     - Directed MST
     - Euler circuit (ADDED)
+    - Euler circuit Path (ADDED)
     - Max Clique (ADDED)
     - SPFA
     - Gabow SCC, Articulation, bridges (ADDED)
