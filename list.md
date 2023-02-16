@@ -106,6 +106,7 @@
 - Monotonic Queue (ADDED)
 - Monotonic Stack (ADDED)
 - Monotonic Stack Hard (ADDED)
+- RMQ 2D (ADDED)
 
 ## DP optimization
 - Alien (NOT NEEDED NOW)
