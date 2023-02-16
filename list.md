@@ -124,6 +124,7 @@
     - Flow With Lower Bound	(Added)
     - Min Cost Max Flow (Tested)
     - Hopcroft Karp (Tested)
+    - Hungarian (ADDED)
 - General:
     - 2SAT (ADDED)
     - BCC (ADDED)
