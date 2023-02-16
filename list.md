@@ -105,6 +105,7 @@
 - LiChaoTree (ADDED)
 - Monotonic Queue (ADDED)
 - Monotonic Stack (ADDED)
+- Monotonic Stack Hard (ADDED)
 
 ## DP optimization
 - Alien (NOT NEEDED NOW)
