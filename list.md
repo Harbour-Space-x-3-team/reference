@@ -90,6 +90,7 @@
 
 ## Data Structures
 - Link-Cut Tree (ADDED)
+- DSU on Tree (ADDED)
 - Cartesian Tree (ADDED)
 - Mo's Algorithm (ADDED)
 - Ordered statistics (ADDED)
